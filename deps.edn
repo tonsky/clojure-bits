@@ -1,0 +1,12 @@
+{ :deps {}
+  :aliases {
+    :dev {
+      :extra-paths ["dev"]
+      :extra-deps {
+        org.clojure/tools.nrepl     {:mvn/version "0.2.12"}
+        org.clojure/tools.namespace {:mvn/version "0.2.11"}
+        cider/cider-nrepl           {:mvn/version "0.15.1"}
+      }
+    }
+  }
+}
