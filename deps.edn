@@ -1,4 +1,6 @@
-{ :deps {}
+{ :deps {
+    org.clojure/tools.reader {:mvn/version "1.2.1"}
+  }
   :aliases {
     :dev {
       :extra-paths ["dev"]
