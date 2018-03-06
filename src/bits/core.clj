@@ -53,13 +53,13 @@
     :let [[defn name docstring & fdecl] form]
 
     (< (count form) 1)
-    {:code (underline (pr-str form) -1) :message "Expected `defn`"}
+    {:code (underline (pr-str form) -1) :message "Expected “defn”"}
 
     (not= defn 'defn)
-    {:code (underline (pr-str defn)) :message "Expected `defn`"}
+    {:code (underline (pr-str defn)) :message "Expected “defn”"}
 
     (< (count form) 2)
-    {:code (underline (pr-str form) -1) :message "Expected symbol after `defn`"}
+    {:code (underline (pr-str form) -1) :message "Expected symbol after “defn”"}
     
     (not (symbol? name))
     {:code (underline (pr-str name)) :message "Expected symbol"}
